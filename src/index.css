@@ -24,6 +24,8 @@ code {
 }
 .modal {
   position: absolute;
+  background-color: #fff;
+  padding: 8px;
 }
 .apartments {
   display: flex;
@@ -32,8 +34,16 @@ code {
 }
 .apartments button{
   margin: 4px;
+  width: Fixed (192px)px;
+  gap: 8px;
+  border-radius: 6px;
+  opacity: 0px;
+  border: none;
 }
 h3, h2 {
   margin: 0;
   padding: 0;
+}
+.selected {
+  outline: 1px solid #4587ED;
 }

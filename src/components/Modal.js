@@ -38,10 +38,9 @@ function Modal({ addApartments, toggleModal }) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <div className="modal-header">
-        </div>
+        <h3>Номер подъезда</h3>
         <select value={selectedEntrance} onChange={handleEntranceChange}>
-          <option value="">Номер подъезда</option>
+
           {entrances.map((entrance, index) => (
             <option key={index} value={entrance}>{entrance}</option>
           ))}
@@ -54,7 +53,7 @@ function Modal({ addApartments, toggleModal }) {
                 <button
                   key={index}
                   onClick={() => handleApartmentClick(apartment)}
-                  className={selectedApartments.includes(apartment) ? 'selected' : ''}
+                  className={`apartment ${selectedApartments.includes(apartment) ? 'selected' : ''}`}
                 >
                   {apartment}
                 </button>
