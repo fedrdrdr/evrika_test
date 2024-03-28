@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 const entrances = ['Подъезд 1', 'Подъезд 2', 'Подъезд 3', 'Подъезд 4', 'Подъезд 5', 'Подъезд 6']; 
 
 const apartmentsByEntrance = {
-  'Подъезд 1': [1, 2, 3, 4, 5 ,6],
-  'Подъезд 2': [1, 2, 3, 4, 5 ,6],
-  'Подъезд 3': [1, 2, 3, 4, 5 ,6],
-  'Подъезд 4': [1, 2, 3, 4, 5 ,6],
-  'Подъезд 5': [1, 2, 3, 4, 5 ,6],
-  'Подъезд 6': [1, 2, 3, 4, 5 ,6],
-}; // Список квартир по подъездам
+  'Подъезд 1': ["Квартира 1", "Квартира 2", "Квартира 3", "Квартира 4", "Квартира 5" ,"Квартира 6"],
+  'Подъезд 2': ["Квартира 1", "Квартира 2", "Квартира 3", "Квартира 4", "Квартира 5" ,"Квартира 6"],
+  'Подъезд 3': ["Квартира 1", "Квартира 2", "Квартира 3", "Квартира 4", "Квартира 5" ,"Квартира 6"],
+  'Подъезд 4': ["Квартира 1", "Квартира 2", "Квартира 3", "Квартира 4", "Квартира 5" ,"Квартира 6"],
+  'Подъезд 5': ["Квартира 1", "Квартира 2", "Квартира 3", "Квартира 4", "Квартира 5" ,"Квартира 6"],
+  'Подъезд 6': ["Квартира 1", "Квартира 2", "Квартира 3", "Квартира 4", "Квартира 5" ,"Квартира 6"],
+}; 
 
 function Modal({ addApartments, toggleModal }) {
   const [selectedEntrance, setSelectedEntrance] = useState('');
@@ -39,18 +39,16 @@ function Modal({ addApartments, toggleModal }) {
     <div className="modal">
       <div className="modal-content">
         <div className="modal-header">
-          {/* <h2>Выберите подъезд</h2> */}
-          {/* <button onClick={toggleModal}>✕</button> */}
         </div>
         <select value={selectedEntrance} onChange={handleEntranceChange}>
-          <option value="">Выберите подъезд</option>
+          <option value="">Номер подъезда</option>
           {entrances.map((entrance, index) => (
             <option key={index} value={entrance}>{entrance}</option>
           ))}
         </select>
         {selectedEntrance && (
           <>
-            <h3>Выберите квартиры</h3>
+            <h3>Номер квартиры</h3>
             <div className="apartments">
               {apartmentsByEntrance[selectedEntrance].map((apartment, index) => (
                 <button
@@ -60,9 +58,11 @@ function Modal({ addApartments, toggleModal }) {
                 >
                   {apartment}
                 </button>
+                
               ))}
+              <button onClick={handleAddButtonClick}>Добавить</button>
             </div>
-            <button onClick={handleAddButtonClick}>Добавить</button>
+            
           </>
         )}
       </div>
