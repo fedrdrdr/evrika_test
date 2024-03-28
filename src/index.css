@@ -28,7 +28,12 @@ code {
 .apartments {
   display: flex;
   flex-direction: column;
+  padding: 4px;
 }
 .apartments button{
-  margin: 8px;
+  margin: 4px;
+}
+h3, h2 {
+  margin: 0;
+  padding: 0;
 }

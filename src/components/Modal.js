@@ -58,7 +58,6 @@ function Modal({ addApartments, toggleModal }) {
                 >
                   {apartment}
                 </button>
-                
               ))}
               <button onClick={handleAddButtonClick}>Добавить</button>
             </div>
