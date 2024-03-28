@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
-const entrances = ['Подъезд 1', 'Подъезд 2', 'Подъезд 3']; // Список подъездов
+const entrances = ['Подъезд 1', 'Подъезд 2', 'Подъезд 3', 'Подъезд 4', 'Подъезд 5', 'Подъезд 6']; 
 
 const apartmentsByEntrance = {
   'Подъезд 1': [1, 2, 3, 4, 5 ,6],
   'Подъезд 2': [1, 2, 3, 4, 5 ,6],
   'Подъезд 3': [1, 2, 3, 4, 5 ,6],
   'Подъезд 4': [1, 2, 3, 4, 5 ,6],
+  'Подъезд 5': [1, 2, 3, 4, 5 ,6],
+  'Подъезд 6': [1, 2, 3, 4, 5 ,6],
 }; // Список квартир по подъездам
 
 function Modal({ addApartments, toggleModal }) {
@@ -37,8 +39,8 @@ function Modal({ addApartments, toggleModal }) {
     <div className="modal">
       <div className="modal-content">
         <div className="modal-header">
-          <h2>Выберите подъезд</h2>
-          <button onClick={toggleModal}>✕</button>
+          {/* <h2>Выберите подъезд</h2> */}
+          {/* <button onClick={toggleModal}>✕</button> */}
         </div>
         <select value={selectedEntrance} onChange={handleEntranceChange}>
           <option value="">Выберите подъезд</option>

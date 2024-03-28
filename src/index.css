@@ -15,4 +15,13 @@ code {
 .table-header {
   display: flex;
   flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.block {
+  margin:10px;
+}
+.modal {
+  position: absolute;
 }

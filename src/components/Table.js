@@ -1,4 +1,3 @@
-// Table.js
 import React, { useState } from 'react';
 import AddApartmentsButton from './AddApartmentsButton';
 
@@ -26,6 +25,7 @@ function Table({ apartments, clearApartments, houseNumber }) {
 
   const handleAddApartments = (selectedApartments) => {
     const updatedApartments = [...apartments, ...selectedApartments];
+
     clearApartments(updatedApartments);
     setIsModalOpen(false);
   };
@@ -33,10 +33,9 @@ function Table({ apartments, clearApartments, houseNumber }) {
   return (
     <div className="table">
       <div className="table-header">
-        <h2>Дом: {houseNumber}</h2>
+
         <div className="table-buttons">
-          <button onClick={clearApartments}>Очистить</button>
-          {/* <button onClick={() => setIsModalOpen(true)}>Добавить</button> */}
+
         </div>
       </div>
       <table>
