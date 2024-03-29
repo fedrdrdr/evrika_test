@@ -39,16 +39,16 @@ function Modal({ addApartments, toggleModal }) {
     <div className="modal">
       <div className="modal-content">
         <h3>Номер подъезда</h3>
-        <select value={selectedEntrance} onChange={handleEntranceChange}>
+        <div className="list" value={selectedEntrance} onChange={handleEntranceChange}>
 
           {entrances.map((entrance, index) => (
-            <option key={index} value={entrance}>{entrance}</option>
+            <button key={index} value={entrance} onClick={handleEntranceChange}>{entrance}</button>
           ))}
-        </select>
+        </div>
         {selectedEntrance && (
           <>
             <h3>Номер квартиры</h3>
-            <div className="apartments">
+            <div className="list">
               {apartmentsByEntrance[selectedEntrance].map((apartment, index) => (
                 <button
                   key={index}
