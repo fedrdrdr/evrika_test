@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Table from './Table';
 import AddApartmentsButton from './AddApartmentsButton';
+import DeleteIcon from '../icons/DeleteIcon';
 
 function App() {
   const [houses, setHouses] = useState([
@@ -35,8 +36,10 @@ function App() {
         <div key={house.number} className="block">
           <div className="table-header">
             <h2>Дом: {house.number}</h2>
-            <AddApartmentsButton addApartments={(selectedApartments) => addApartments(house.number, selectedApartments)} />
-            <button onClick={() => clearApartments(house.number)}>Очистить</button>
+            <div className='buttons'>
+              <AddApartmentsButton addApartments={(selectedApartments) => addApartments(house.number, selectedApartments)} />
+              <button className="button" onClick={() => clearApartments(house.number)}><DeleteIcon /> </button>
+            </div>
           </div>
           <Table apartments={house.apartments} houseNumber={house.number} clearApartments={() => clearApartments(house.number)} />
         </div>

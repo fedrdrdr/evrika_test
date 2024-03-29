@@ -32,15 +32,9 @@ function Table({ apartments, clearApartments, houseNumber }) {
 
   return (
     <div className="table">
-      <div className="table-header">
-
-        <div className="table-buttons">
-
-        </div>
-      </div>
-      <table>
+      <table style={{width:"358px"}}>
         <thead>
-          <tr>
+          <tr >
             <th>Номер подъезда</th>
             <th>Номер квартиры</th>
           </tr>

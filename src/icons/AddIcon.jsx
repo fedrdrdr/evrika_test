@@ -1,55 +1,14 @@
 import React from 'react';
 
-function AddIcon(props) {
+function AddIcon() {
   return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <g clipPath="url(#clip0_4203_3762)">
-        <path
-          d="M16.8747 4.375L3.12469 4.37501"
-          stroke="white"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M8.125 8.125V13.125"
-          stroke="white"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M11.875 8.125V13.125"
-          stroke="white"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M15.6247 4.375V16.25C15.6247 16.4158 15.5588 16.5747 15.4416 16.6919C15.3244 16.8092 15.1655 16.875 14.9997 16.875H4.99969C4.83393 16.875 4.67496 16.8092 4.55775 16.6919C4.44054 16.5747 4.37469 16.4158 4.37469 16.25V4.375"
-          stroke="white"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375"
-          stroke="white"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_4203_3770)">
+        <path fillRule="evenodd" clipRule="evenodd" d="M16.9979 10.6269C17.3293 10.6282 17.599 10.3606 17.6002 10.0292C17.6015 9.69787 17.334 9.4282 17.0026 9.42691L10.6024 9.40193L10.6274 3.00174C10.6287 2.67037 10.3611 2.4007 10.0297 2.39941C9.69835 2.39811 9.42867 2.66569 9.42738 2.99706L9.40241 9.39725L3.00221 9.37228C2.67085 9.37099 2.40117 9.63857 2.39988 9.96993C2.39858 10.3013 2.66616 10.571 2.99753 10.5723L9.39772 10.5972L9.37275 16.9974C9.37146 17.3288 9.63904 17.5985 9.97041 17.5998C10.3018 17.6011 10.5715 17.3335 10.5727 17.0021L10.5977 10.6019L16.9979 10.6269Z" fill="white"/>
       </g>
       <defs>
-        <clipPath id="clip0_4203_3762">
-          <rect width="20" height="20" fill="white" />
+        <clipPath id="clip0_4203_3770">
+          <rect width="20" height="20" fill="white"/>
         </clipPath>
       </defs>
     </svg>

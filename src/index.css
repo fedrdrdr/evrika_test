@@ -17,11 +17,14 @@ code {
   flex-direction: row;
   align-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .block {
   margin:10px;
+  width: 358px;
 }
+
 .modal {
   position: absolute;
   background-color: #fff;
@@ -37,11 +40,17 @@ code {
   border-radius: 6px;
   opacity: 0px;
   border: none;
-
+}
+.buttons {
+  display: flex;
+  gap:8px;
 }
 h3, h2 {
   margin: 0;
   padding: 0;
+}
+th {
+  font-weight: 500;
 }
 .selected {
   outline: 1px solid #4587ED;
