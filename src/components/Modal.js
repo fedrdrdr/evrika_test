@@ -21,11 +21,15 @@ function Modal({ addApartments, toggleModal }) {
   };
 
   const handleApartmentClick = (apartment) => {
-    setSelectedApartments((prevSelectedApartments) => [
-      ...prevSelectedApartments,
-      apartment,
-    ]);
+    setSelectedApartments((prevSelectedApartments) => {
+      if (prevSelectedApartments.includes(apartment)) {
+        return prevSelectedApartments.filter((selectedApartment) => selectedApartment !== apartment);
+      } else {
+        return [...prevSelectedApartments, apartment];
+      }
+    });
   };
+  
 
   const handleAddButtonClick = () => {
     addApartments(selectedApartments.map((flatNumber) => ({
