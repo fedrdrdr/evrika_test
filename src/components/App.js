@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import Table from './Table';
 import AddApartmentsButton from './AddApartmentsButton';
