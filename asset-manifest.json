@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/evrika_test/static/css/main.df44d3c4.css",
-    "main.js": "/evrika_test/static/js/main.ecf508be.js",
+    "main.js": "/evrika_test/static/js/main.ae4a10d3.js",
     "static/js/453.68c6c110.chunk.js": "/evrika_test/static/js/453.68c6c110.chunk.js",
     "index.html": "/evrika_test/index.html",
     "main.df44d3c4.css.map": "/evrika_test/static/css/main.df44d3c4.css.map",
-    "main.ecf508be.js.map": "/evrika_test/static/js/main.ecf508be.js.map",
+    "main.ae4a10d3.js.map": "/evrika_test/static/js/main.ae4a10d3.js.map",
     "453.68c6c110.chunk.js.map": "/evrika_test/static/js/453.68c6c110.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df44d3c4.css",
-    "static/js/main.ecf508be.js"
+    "static/js/main.ae4a10d3.js"
   ]
 }
