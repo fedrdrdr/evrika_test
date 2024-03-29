@@ -41,7 +41,6 @@ function Modal({ addApartments, toggleModal }) {
 
   return (
     <div className="modal">
-      <div className="modal-content">
         <h3>Номер подъезда</h3>
         <div className="list" value={selectedEntrance} onChange={handleEntranceChange}>
 
@@ -64,10 +63,8 @@ function Modal({ addApartments, toggleModal }) {
               ))}
               <button onClick={handleAddButtonClick} className='button'>Добавить</button>
             </div>
-            
           </>
         )}
-      </div>
     </div>
   );
 }
