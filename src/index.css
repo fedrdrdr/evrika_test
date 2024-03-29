@@ -24,6 +24,13 @@ code {
   margin:10px;
   width: 358px;
 }
+table {
+  border-collapse: collapse;
+}
+ td {
+  padding-left: 24px;
+  border: 0px solid black;
+}
 
 .modal {
   position: absolute;
@@ -75,4 +82,10 @@ h3 {
   justify-content: center;
   align-items: center;
   padding: 4px ;
+}
+.button:hover  {
+  background-color: #3573D2;
+}
+.button:active  {
+  background-color: #225CB5;
 }
