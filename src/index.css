@@ -30,15 +30,14 @@ code {
 .list {
   display: flex;
   flex-direction: column;
-  padding: 4px;
+  /* padding: 4px; */
 }
 .list button{
-  margin: 4px;
-  width: Fixed (192px)px;
-  gap: 8px;
+  margin: 4px 0;
   border-radius: 6px;
   opacity: 0px;
   border: none;
+
 }
 h3, h2 {
   margin: 0;
@@ -46,4 +45,15 @@ h3, h2 {
 }
 .selected {
   outline: 1px solid #4587ED;
+}
+h3 {
+  width:  208px;
+  height:  38px;
+  padding: 8px 12px 8px 12px;
+  gap: 33px;
+  border-radius: 12px 12px 0px 0px;
+  opacity: 0px;
+  background-color: #353D4B;
+  color: #FFFFFF;
+
 }
