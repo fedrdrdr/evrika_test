@@ -57,3 +57,13 @@ h3 {
   color: #FFFFFF;
 
 }
+
+.button  {
+  background-color: #4587ED;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px ;
+}
