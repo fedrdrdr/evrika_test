@@ -1,4 +1,3 @@
-// AddApartmentsButton.js
 import React, { useState } from 'react';
 import Modal from './Modal';
 import AddIcon from '../icons/AddIcon';
